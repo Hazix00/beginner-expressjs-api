@@ -1,0 +1,23 @@
+get http://localhost:3000/
+###
+get http://localhost:3000/products
+###
+get http://localhost:3000/products/3
+###
+post http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Keyboard"
+}
+###
+put http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Shoes"
+}
+###
+delete http://localhost:3000/products/4
